@@ -55,3 +55,25 @@ window.addEventListener('load', () => {
     updateBanner();
     startAutoScroll();
 });
+const plusButtons = document.querySelectorAll(".plus_button");
+const minusButtons = document.querySelectorAll(".minus_button");
+
+plusButtons.forEach(function(button) {
+    button.addEventListener("click", () => {
+        const input = button.parentElement.querySelector(".product_count");
+        let value = parseInt(input.value);
+        if (value < 99) {
+            input.value = value + 1;
+        }
+    });
+});
+
+minusButtons.forEach(function(button) {
+    button.addEventListener("click", () => {
+        const input = button.parentElement.querySelector(".product_count");
+        let value = parseInt(input.value);
+        if (value > 1) {
+            input.value = parseInt(input.value) - 1;
+        }
+    });
+});
