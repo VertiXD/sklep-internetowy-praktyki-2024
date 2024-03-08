@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stronka</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+<body>
+    <header class="navbar">
+        <div class="top">
+            <div class="phone"><img class="contact_icon" src="./img/phone_icon.png" alt="phone">+12 345 678 901</div>
+            <div class="email"><img class="contact_icon" src="./img/email_icon.png" alt="mail">random_email@gmail.com
+            </div>
+        </div>
+        <hr class="line">
+        <div class="mid">
+            <div class="logo"><img src="./img/logo.png" alt="logo" class='logo_image'></div>
+            <div class="searchbar">
+                <input type="text" name="" id="" placeholder="Wyszukaj" class="search">
+                <button type="submit" class="search_button"><img src="./img/search.png" alt="search"
+                        class='search_icon'></button>
+            </div>
+            <div class="box cart"><button class="navbar_button"><img src="./img/cart.png" alt="cart"
+                        class='navbar_icon'></div>
+            <div class="box idk"><button class="navbar_button"><img src="./img/notifs.png" alt="notifs"
+                        class='navbar_icon'></div>
+            <div class="box sign_in"><button class="sign_in_button"><a href="#">Zaloguj się</a></div>
+            <div class="box sign_up"><button class="sign_up_button"><a href="#">Utwórz konto</a></div>
+        </div>
+        <nav class="categories">
+            <div class="category_tab tab1">Komputery i laptopy</div>
+            <div class="category_tab tab2">Podzespoły komputerowe</div>
+            <div class="category_tab tab3">Akcesoria</div>
+            <div class="category_tab tab4">Smartfony i smartwatche</div>
+            <div class="category_tab tab5">Urządzenia peryferyjne</div>
+            <div class="category_tab tab6">Gaming</div>
+            <div class="category_tab tab7">Mega Oferty</div>
+        </nav>
+    </header>
+
+    <div class="product container">
+        <div class="product-img"> 
+            <img src="product-1" alt="Zdjęcie produktu">
+        </div>
+        <div class="product-title"> 
+            <p>Tytuł produktu</p>
+        </div>
+        <div class="product-specification"> 
+
+            <p>wstepna specyfikacja np:</p>
+            <p class="spec-text"><span>Pamieć ram:</span> 2137 TB</p>
+            <p class="spec-text"><span>Ekran:</span> 12.4</p>
+            <p class="spec-text"><span>Procesor:</span> E8400 </p>
+
+        </div>
+        <div class="product-price"> 
+            <p>Cena</p>
+            <div class="product-price-other">
+                <div class="product-count2">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                </div>
+                <div class="product-cart">
+                    <form action="index.html">
+                        <button type="submit">Dodaj do koszyka</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="product-variants"> 
+            warianty np:
+            <p>Kolor:</p>
+            <div class="buttons">
+                <button class="white">Biały</button>
+                <button class="black">Czarny</button>
+            </div>
+
+            <p>Inne:</p>
+
+        </div>
+        <div class="product-other"> 
+            <!-- dostenosc dostawa raty -->
+                    <div class="availability"> 
+                        <p>Dostępny w przedsprzedaży!</p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                    <div class="delivery"> 
+                        <p>Dostawa</p>
+                        <a href="#">Sprawdź szeczegóły</a>
+                    </div>
+                    <div class="installment"> 
+                        <p>Raty</p>
+                        <a href="#">Raty 0%!</a>
+                    </div>
+        </div>
+    
+    </div>
+    <div class="product_info container">
+        <p class="info_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eius doloribus voluptatum id placeat praesentium mollitia exercitationem, natus nemo veritatis aliquam saepe earum incidunt, officia repellat iste! Aut officia fuga quisquam dolore eos veritatis saepe repellendus, nam omnis voluptas. Repellat aliquid repudiandae recusandae doloribus ad dignissimos quia illum hic, reprehenderit, quidem accusamus error cupiditate facilis nulla perferendis, eveniet architecto ducimus dolore omnis commodi! Cum quasi laboriosam doloremque ex suscipit, quam itaque adipisci est aut eum alias doloribus beatae eius tenetur minus tempore perspiciatis saepe unde, accusamus quia rerum cumque placeat. Porro, ipsum dolor. Omnis suscipit eius velit rerum repellat dolores dicta natus consequuntur ea beatae quia aliquam architecto mollitia odio quidem praesentium odit dignissimos eligendi voluptatum cum autem, obcaecati amet aut! Quos veniam quo reprehenderit fugiat est, eum exercitationem magni ratione reiciendis quisquam. Harum iure voluptas animi quod maxime, quia repellendus amet error nostrum repudiandae architecto veniam quaerat vel. Eum?</p>
+        <div class="gallery-container">
+            <!-- zdjęcia -->
+            <div class="placeholder-image"></div>
+            <div class="placeholder-image"></div>
+            <div class="placeholder-image"></div>
+            <div class="placeholder-image"></div>
+            <div class="placeholder-image"></div>
+        </div>
+    </div>
+
+
+    <section class="recommendations-container recommendations-container-small container">
+        <h3 class="full-width">Rekomendacje</h3>
+        <div class="product_box container">
+            <div class="product_image"></div>
+            <div class="product_box_text">
+                <a href="#" class="product_name">Laptop</a>
+                <p class="price_text">$2137.00</p>
+            </div>
+            <div class="button-holder">
+                <button class="product_button">Do koszyka</button>
+            </div>
+        </div>
+        <div class="product_box container">
+            <div class="product_image"></div>
+            <div class="product_box_text">
+                <a href="#" class="product_name">Telefon</a>
+                <p class="price_text">$1500.00</p>
+            </div>
+            <div class="button-holder">
+                <button class="product_button">Do koszyka</button>             
+            </div>
+        </div>
+        <div class="product_box container">
+            <div class="product_image"></div>
+            <div class="product_box_text">
+                <a href="#" class="product_name">Słuchawki</a>
+                <p class="price_text">$500.00</p>
+            </div>
+            <div class="button-holder">
+                <button class="product_button">Do koszyka</button>
+            </div>
+        </div>
+        <div class="product_box container">
+            <div class="product_image"></div>
+            <div class="product_box_text">
+                <a href="#" class="product_name">Kabel HDMI</a>
+                <p class="price_text">$5.00</p>
+            </div>
+            <div class="button-holder">
+                <button class="product_button">Do koszyka</button>             
+            </div>
+        </div>  
+    </section>
+
+    <div class="specification-container container" id="#specs">
+        <h3>Specyfikacja</h3>
+        <div class="specification">
+            <table class="spec-table">
+                <tbody>
+                    <tr>
+                        <td><strong>Procesor:</strong></td>
+                        <td>AMD Ryzen™ 5 7535HS (6 rdzeni, 12 wątków, 3.30-4.55 GHz, 16 MB cache)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pamięć RAM:</strong></td>
+                        <td>16 GB (DDR5, 4800 MHz)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Maksymalna obsługiwana ilość pamięci:</strong></td>
+                        <td>32 GB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Liczba gniazd pamięci (ogółem/wolne):</strong></td>
+                        <td>2/0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dysk SSD M.2 PCle:</strong></td>
+                        <td>512 GB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Możliwość montażu dysku M.2 PCIe (brak elementów montażowych):</strong></td>
+                        <td>Opcje dołożenia dysków</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dotykowy ekran:</strong></td>
+                        <td>Nie</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Typ ekranu:</strong></td>
+                        <td>Matowy, LED, IPS</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Przekątna ekranu:</strong></td>
+                        <td>15,6"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rozdzielczość ekranu:</strong></td>
+                        <td>1920 x 1080 (Full HD)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Częstotliwość odświeżania ekranu:</strong></td>
+                        <td>120 Hz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jasność matrycy:</strong></td>
+                        <td>250 cd/m2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="newsletter-container container">
+        <h2>Zapisz się do naszego newslettera</h2>
+        <p>Zapisz się do naszego newslettera aby nie ominęła Cię żadna okazja!</p>
+        <form action="#" method="POST" class="newsletter-form">
+            <input type="email" name="email" placeholder="Podaj swój adres e-mail" required>
+            <button type="submit">Zapisz się</button>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Telefon: +12 123 456 789</p>
+                <p>Email: example@example.com</p>
+            </div>
+            <div class="links">
+                <a href="regulamin">Regulamin</a> | <a href="polityka_prywatnosci">Polityka prywatności</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -5,6 +5,7 @@
     --light_gray: rgba(248, 248, 248, 1);
     --line_size: 18px;
     --black: rgba(66, 66, 65, 1);
+    --product_color: rgb(245, 38, 38);
 }
 
 html, body{
@@ -12,6 +13,7 @@ html, body{
     margin: 0px;
     font-family: "Poppins";
     font-size: var(--line_size);
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -537,4 +539,227 @@ html, body{
         font-weight: 700;
     }
     
+    .product_info{
+        margin-left: 145px;
+        margin-right: 145px;
+        border-radius: 32px;
+        padding: 22px;
+        margin-top: 40px
+    }
+    p, h2{
+        color: var(--black);
+    }
+    .placeholder-image{
+        background-color: var(--light_gray);
+        border-radius: 32px;
+        width: 100%;
+        height: 220px;
+    }
+    .gallery-container
+    {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 22px;
+    }
+    .recommendations-container-small{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px 1fr !important;
+        grid-column-gap: 12px;
+    }
+
+    .specification-container {
+        margin-top: 45px;
+        margin-left: 145px;
+        margin-right: 145px;
+        padding: 22px;
+        position: relative;
+        border-radius: 32px;
+    }
+    h3 {
+        font-size: 2em;
+        margin-bottom: -15px;
+    }
+    .specification {
+        display: block;
+        white-space: pre-wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .spec-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .spec-table th, .spec-table td {
+        border-top: 1.25px solid #EEEEEE;
+        border-bottom: 1.25px solid #EEEEEE;
+        padding: 8px;
+        text-align: left;
+    }
+    .spec-table tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+    .spec-table tr:nth-child(odd) {
+        background-color: #FCFCFC;
+    }
+    .spec-table td:nth-child(odd) {
+        padding-left: 150px;
+        width: 320px;
+        font-size: 16px;
+    }
+    .spec-table td:nth-child(even) {
+        font-size: 14px;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 500px;
+        margin-left: 145px;
+        margin-right: 145px;
+        margin-top: 40px;
+        padding:22px;
+        border-radius:32px
+    }
+        
+    .product-img { 
+        grid-area: 1 / 1 / 6 / 4; 
+        background-color: var(--light_gray);
+        border-radius: 12px;
+        padding: 12px;
+    }
+    .product-title {
+        grid-area: 1 / 4 / 2 / 8; 
+        margin-left: 3rem;
+    }
+    .product-title p {
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+    }
+    .product-specification {
+        grid-area: 2 / 4 / 3 / 6; 
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+    .product-specification span {
+        font-style: italic;
+    }
+    .product-specification button {
+        margin-top: 3px;
+        padding: 9px;
+        border: none;
+        background-color: transparent;
+    }
+    .product-specification button:hover {
+        border: none;
+        background-color: rgb(185, 181, 181);
+        border-radius: 8px;
+    }
+    .product-specification button a {
+        color: #000;
+        text-decoration: none;
+        font-style: italic;
+    }
+    .product-price {
+        grid-area: 2 / 6 / 3 / 8; 
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom: none;
+    }
+    .product-price-other {
+        display: flex;
+    }
+    .product-count2 {
+        width: 50%;
+        height: 6.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-count2 select {
+        width: 34%;
+        height: 32%;
+        border-radius: 12px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .product-cart {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-cart button {
+        background-color: var(--button_color);
+        padding: 0.75rem;
+        border: none;
+        border-radius: 12px;
+        color:  #fff;
+        cursor: pointer;
+    }
+    .product-price p {
+        text-align: center;
+        font-size: 22px;
+    }
+    .product-variants {
+        grid-area: 3 / 4 / 6 / 6; 
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .buttons button {
+        background-color: #fff;
+        padding: 1rem 3.438rem;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+    .buttons button:hover {
+        border: 0.063rem solid black;
+    }
+    .product-other { 
+        grid-area: 3 / 6 / 6 / 8; 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto); 
+        grid-row-gap: 0; 
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .availability, .delivery, .installment {
+        display: flex; 
+        justify-content: center;
+        text-align: center; 
+        flex-direction: column;
+        color: var(--product_color);
+        font-weight: 500;
+        font-size: large;
+        margin: 0; 
+        padding: 0; 
+    }
+    .availability p, .delivery p, .installment p {
+        margin: 0;
+        padding: 0;
+    }
+    .availability a, .delivery a, .installment a {
+        text-decoration: none;
+        color: #555454;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 15px;
+    }
+    .availability a:hover, .delivery a:hover, .installment a:hover {
+        text-decoration: underline;
+    }
+    .spec-text{
+        font-weight: 300;
+    }
 }
