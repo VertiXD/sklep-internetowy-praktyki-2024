@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stronka</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+<body>
+    <header class="navbar">
+        <div class="top">
+            <div class="phone"><img class="contact_icon" src="./img/phone_icon.png" alt="phone">+12 345 678 901</div>
+            <div class="email"><img class="contact_icon" src="./img/email_icon.png" alt="mail">random_email@gmail.com
+            </div>
+        </div>
+        <hr class="line">
+        <div class="mid">
+            <div class="logo"><img src="./img/logo.png" alt="logo" class='logo_image'></div>
+            <div class="searchbar">
+                <input type="text" name="" id="" placeholder="Wyszukaj" class="search">
+                <button type="submit" class="search_button"><img src="./img/search.png" alt="search"
+                        class='search_icon'></button>
+            </div>
+            <div class="box cart"><button class="navbar_button"><img src="./img/cart.png" alt="cart"
+                        class='navbar_icon'></div>
+            <div class="box idk"><button class="navbar_button"><img src="./img/notifs.png" alt="notifs"
+                        class='navbar_icon'></div>
+            <div class="box sign_in"><button class="sign_in_button"><a href="#">Zaloguj się</a></div>
+            <div class="box sign_up"><button class="sign_up_button"><a href="#">Utwórz konto</a></div>
+        </div>
+        <nav class="categories">
+            <div class="category_tab tab1">Komputery i laptopy</div>
+            <div class="category_tab tab2">Podzespoły komputerowe</div>
+            <div class="category_tab tab3">Akcesoria</div>
+            <div class="category_tab tab4">Smartfony i smartwatche</div>
+            <div class="category_tab tab5">Urządzenia peryferyjne</div>
+            <div class="category_tab tab6">Gaming</div>
+            <div class="category_tab tab7">Mega Oferty</div>
+        </nav>
+    </header>
+    <div class="card-product-container container">
+        <div class="card-product-price container"> 
+            <div class="card-product-price-info">
+                <div class="card-total-price">
+                    <p>Łączna cena</p>
+                </div>
+                <div class="card-price">
+                    <p>2137zł</p>
+                </div>
+            </div>
+            <div class="card-payment">
+                <button><a href="#">Przejdź do płatności</a></button>
+            </div>
+        </div>
+        <!-- gora carta -->
+        <div class="card-product-ilosc"> 
+            <div class="card-product-total">
+                <h3>Koszyk</h3>
+            </div>
+            <div class="card-product-remove">
+                Usuń całość
+                <a href="#"><i class="my-icon fa-regular fa-trash-can"></i></a>
+            </div>
+        </div>
+        <div class="card-product-info container"> 
+            <!-- div w srdoku zdj nazwa ilosc usun -->
+            <div class="card-product-idk">
+                <div class="card-product-img">
+                </div>
+                <div class="card-product-info">
+                    <span>nazwa produktu</span>
+                </div>
+                <div class="card-product-more-less">
+                    <span>
+                        <div class="button-holder">
+                            <button class="minus_button count_button">-</button>
+                            <input type="number" name="count" class="product_count" value="1">
+                            <button class="plus_button count_button">+</button>
+                            <button class="product_button">Do koszyka</button>
+                        </div>
+                    </span>
+                </div>
+                <div class="card-product-delete">
+                    <a href="#"><i class="my-icon fa-regular fa-trash-can"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="card-pay-variants container"> 
+            <div class="card-possibles">
+                <h4>U nas możesz zapłacić:</h4>
+            </div>
+            <div class="card-payment-possibles">
+                <img src="./img/Aliorbank.png" alt="Aliorbank">
+                <img src="./img/blik.png" alt="blik">
+                <img src="./img/mastercard.png" alt="mastercard">
+                <img src="./img/przelewy24.png" alt="przelewy24">
+                <img src="./img/santanderbank.png" alt="santanderbank">
+                <img src="./img/visa.png" alt="visa">
+            </div>
+        </div>
+        <div class="main-page idfk">
+            <p><a href="/">Wróć do strony głównej</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Telefon: +12 123 456 789</p>
+                <p>Email: example@example.com</p>
+            </div>
+            <div class="links">
+                <a href="regulamin">Regulamin</a> | <a href="polityka_prywatnosci">Polityka prywatności</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
