@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stronka</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+    <header class="navbar">
+        <div class="top">
+            <div class="phone"><img class="contact_icon" src="./img/phone_icon.png" alt="phone">+12 345 678 901</div>
+            <div class="email"><img class="contact_icon" src="./img/email_icon.png" alt="mail">random_email@gmail.com
+            </div>
+        </div>
+        <hr class="line">
+        <div class="mid">
+            <div class="logo"><img src="./img/logo.png" alt="logo" class='logo_image'></div>
+            <div class="searchbar">
+                <input type="text" name="" id="" placeholder="Wyszukaj" class="search">
+                <button type="submit" class="search_button"><img src="./img/search.png" alt="search"
+                        class='search_icon'></button>
+            </div>
+            <div class="box cart"><button class="navbar_button"><img src="./img/cart.png" alt="cart"
+                        class='navbar_icon'></div>
+            <div class="box idk"><button class="navbar_button"><img src="./img/notifs.png" alt="notifs"
+                        class='navbar_icon'></div>
+            <div class="box sign_in"><button class="sign_in_button"><a href="#">Zaloguj się</a></div>
+            <div class="box sign_up"><button class="sign_up_button"><a href="#">Utwórz konto</a></div>
+        </div>
+        <nav class="categories">
+            <div class="category_tab tab1">Komputery i laptopy</div>
+            <div class="category_tab tab2">Podzespoły komputerowe</div>
+            <div class="category_tab tab3">Akcesoria</div>
+            <div class="category_tab tab4">Smartfony i smartwatche</div>
+            <div class="category_tab tab5">Urządzenia peryferyjne</div>
+            <div class="category_tab tab6">Gaming</div>
+            <div class="category_tab tab7">Mega Oferty</div>
+        </nav>
+    </header>
+    <div class="scrollable-container container">
+        <div class="nav-arrow left" onclick="prevProduct()">&#10094;</div>
+        <h3>Polecane</h3>
+        <div class="recommendations-container-wide">
+
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+            <div class="product_box scrollable-panel container">
+                <div class="product_image"></div>
+                <div class="product_box_text">
+                    <a href="#" class="product_name">Laptop</a>
+                    <p class="price_text">$2137.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="minus_button count_button">-</button>
+                    <input type="number" name="count" class="product_count" value="1">
+                    <button class="plus_button count_button">+</button>
+                    <button class="product_button">Do koszyka</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="nav-arrow right" onclick="nextProduct()">&#10095;</div>
+    </div>
+    
+    <div class="products-container">
+        <div class="left-container container-decorations" id="filters">
+                <div class="filter-group">
+                    <h3><a href="#" onclick="toggle()">Producent</a></h3>
+                    <ul>
+                        <!-- karty graficzne przykladowo -->
+                        <li>
+                            <input type="checkbox" id="gigabyte" name="gigabyte" value="Gigabyte">
+                            <label for="gigabyte">Gigabyte (12)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="msi" name="msi" value="MSI">
+                            <label for="msi">MSI (45)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="asus" name="asus" value="ASUS">
+                            <label for="asus">ASUS (12)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="zotac" name="zotac" value="Zotac">
+                            <label for="zotac">Zotac (23)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="inno3d" name="inno3d" value="Inno3D">
+                            <label for="inno3d">Inno3D (43)</label>
+                        </li>
+                    </ul>
+                  <hr>
+                </div>
+                <div class="popup-background" id="popupBackground" onclick="toggle()"></div>
+                <div class="popup-content" id="popupContent">
+                    <h2>Tutaj opis producentow moze byc czy cos</h2>
+                    <p>Tutaj opis producentow moze byc czy cos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis provident nesciunt voluptate tenetur numquam eius illo quisquam ut, error impedit possimus excepturi dicta corrupti laborum, deleniti quod laudantium exercitationem? Similique.</p>
+                    <button onclick="toggle()">Zamknij</button>
+                </div>
+                <div class="price-filter">
+                    <div class="price-from-header">
+                        <label for="price-from">Cena</label>
+                    </div>
+                    <div class="price-selection">
+                        <input type="number" id="price-from" name="price-from" placeholder="od zł">
+                        <i class="icon fa-solid fa-minus"></i>
+                        <input type="number" id="price-to" name="price-to" placeholder="do zł">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Status</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="wyprzedaz" value="wyprzedaz">
+                            <label for="wyprzedaz">Wyprzedaż (130)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Promocja" value="promocja">
+                            <label for="Promocja">Promocja! (45)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Polecamy" value="Polecamy">
+                            <label for="Polecamy">Polecamy (33)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Nowość" value="Nowość">
+                            <label for="Nowość">Nowość (13)</label>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="filter-group">
+                    <h3>Pamięć</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pamiec-24" value="pamiec-24">
+                            <label for="pamiec-24">24 GB (14)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pamiec-20" value="pamiec-20">
+                            <label for="pamiec-20">20 GB (12)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pamiec-16" value="pamiec-16">
+                            <label for="pamiec-16">16 GB (42)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pamiec-8" value="pamiec-8">
+                            <label for="pamiec-8">8 GB (10)</label>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="filter-group">
+                    <h3>Rodzaj pamięci</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pamiec-GDDR6X" value="pamiec-GDDR6X">
+                            <label for="pamiec-GDDR6X">GDDR6X (154)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pamiec-GDDR6" value="pamiec-GDDR6">
+                            <label for="pamiec-GDDR6">GDDR6 (224)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pamiec-GDDR5" value="pamiec-GDDR5">
+                            <label for="pamiec-GDDR5">GDDR5 (2)</label>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                etc. etc.
+            </div>
+          <!-- Filtrowanie po kategoriach i dostępnych filtrach -->
+        <div class="right-container container-decorations">
+    
+            <h3 class="full-width products-h3">Produkty</h3>
+    
+            <div class="inner-product_box container">
+                <div class="inner-product_image"></div>
+                <div class="inner-product_box_text">
+                    <a href="#" class="inner-product_name">Laptop</a>
+                    <p class="inner-price_text">$2699.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="basket_button">Do koszyka</button>
+                </div>
+            </div>
+    
+            <div class="inner-product_box container">
+                <div class="inner-product_image"></div>
+                <div class="inner-product_box_text">
+                    <a href="#" class="inner-product_name">Laptop</a>
+                    <p class="inner-price_text">$2699.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="basket_button">Do koszyka</button>
+                </div>
+            </div>
+    
+            <div class="inner-product_box container">
+                <div class="inner-product_image"></div>
+                <div class="inner-product_box_text">
+                    <a href="#" class="inner-product_name">Laptop</a>
+                    <p class="inner-price_text">$2699.00</p>
+                </div>
+                <div class="button-holder">
+                    <button class="basket_button">Do koszyka</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p>Telefon: +12 123 456 789</p>
+                <p>Email: example@example.com</p>
+            </div>
+            <div class="links">
+                <a href="regulamin">Regulamin</a> | <a href="polityka_prywatnosci">Polityka prywatności</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

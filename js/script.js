@@ -1,6 +1,9 @@
 const banner = document.querySelector('.banner');
 const panels = document.querySelectorAll('.banner-panel');
 const dots = document.querySelectorAll('.pagination-dot');
+const scrollable_container = document.querySelector('.recommendations-container-wide');
+const scrollable_products = document.querySelectorAll('.scrollable-panel');
+let currentProduct = 0;
 let currentPanel = 0;
 
 // Przewijanie w prawo
@@ -77,3 +80,35 @@ minusButtons.forEach(function(button) {
         }
     });
 });
+
+function updateProducts(flag) {
+    const offset = -(currentProduct/4) * scrollable_container.offsetWidth;
+    scrollable_container.style.transform = `translateX(${offset+flag}px)`;
+}
+
+function nextProduct() {
+    if (currentProduct < scrollable_products.length/2 - 1 ) {
+        currentProduct+=4;
+        updateProducts(-8);
+    }
+}
+
+// Przewijanie w lewo
+function prevProduct() {
+    if (currentProduct > 0) {
+        currentProduct-=4;
+        updateProducts(0);
+    }
+}
+
+function toggle() {
+    let blur = document.getElementById('filters');
+    blur.classList.toggle('active');
+
+    let popupBackground = document.getElementById('popupBackground');
+    let popupContent = document.getElementById('popupContent');
+
+    // toggle dla tla i zawartości popupa
+    popupBackground.classList.toggle('active');
+    popupContent.classList.toggle('active');
+}   
