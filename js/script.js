@@ -111,4 +111,11 @@ function toggle() {
     // toggle dla tla i zawartości popupa
     popupBackground.classList.toggle('active');
     popupContent.classList.toggle('active');
-}   
+} 
+  
+function toIndex(){
+    window.location.href = './index.html';
+}
+function toCart(){
+    window.location.href = './koszyk.html';
+}

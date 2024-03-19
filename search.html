@@ -19,26 +19,26 @@
 
 
 <body>
-    <header class="navbar">
-        <div class="top">
-            <div class="phone"><img class="contact_icon" src="./img/phone_icon.png" alt="phone">+12 345 678 901</div>
-            <div class="email"><img class="contact_icon" src="./img/email_icon.png" alt="mail">random_email@gmail.com
-            </div>
+    <div class="top">
+        <div class="phone"><img class="contact_icon" src="./img/phone_icon.png" alt="phone">+12 345 678 901</div>
+        <div class="email"><img class="contact_icon" src="./img/email_icon.png" alt="mail">random_email@gmail.com
         </div>
+    </div>
+    <header class="navbar">
         <hr class="line">
         <div class="mid">
-            <div class="logo"><img src="./img/logo.png" alt="logo" class='logo_image'></div>
-            <div class="searchbar">
-                <input type="text" name="" id="" placeholder="Wyszukaj" class="search">
+            <div class="logo" onclick="toIndex()"><img src="./img/logo.png" alt="logo" class='logo_image'></div>
+            <form method="get" action="search.html" class="searchbar">
+                <input type="text" name="search" id="search" placeholder="Wyszukaj" class="search">
                 <button type="submit" class="search_button"><img src="./img/search.png" alt="search"
                         class='search_icon'></button>
-            </div>
-            <div class="box cart"><button class="navbar_button"><img src="./img/cart.png" alt="cart"
+            </form>
+            <div class="box cart"><button class="navbar_button" onclick="toCart()"><img src="./img/cart.png" alt="cart"
                         class='navbar_icon'></div>
             <div class="box idk"><button class="navbar_button"><img src="./img/notifs.png" alt="notifs"
                         class='navbar_icon'></div>
-            <div class="box sign_in"><button class="sign_in_button"><a href="#">Zaloguj się</a></div>
-            <div class="box sign_up"><button class="sign_up_button"><a href="#">Utwórz konto</a></div>
+            <div class="box sign_in"><button class="sign_in_button"><a href="login.html">Zaloguj się</a></div>
+            <div class="box sign_up"><button class="sign_up_button"><a href="register.html">Utwórz konto</a></div>
         </div>
         <nav class="categories">
             <div class="category_tab tab1">Komputery i laptopy</div>
@@ -165,7 +165,7 @@
     </div>
     
     <div class="products-container">
-        <div class="left-container container-decorations" id="filters">
+        <div class="left-container container" id="filters">
                 <div class="filter-group">
                     <h3><a href="#" onclick="toggle()">Producent</a></h3>
                     <ul>
@@ -191,7 +191,6 @@
                             <label for="inno3d">Inno3D (43)</label>
                         </li>
                     </ul>
-                  <hr>
                 </div>
                 <div class="popup-background" id="popupBackground" onclick="toggle()"></div>
                 <div class="popup-content" id="popupContent">
@@ -229,7 +228,6 @@
                             <label for="Nowość">Nowość (13)</label>
                         </li>
                     </ul>
-                    <hr>
                 </div>
                 <div class="filter-group">
                     <h3>Pamięć</h3>
@@ -251,7 +249,6 @@
                             <label for="pamiec-8">8 GB (10)</label>
                         </li>
                     </ul>
-                    <hr>
                 </div>
                 <div class="filter-group">
                     <h3>Rodzaj pamięci</h3>
@@ -269,7 +266,6 @@
                             <label for="pamiec-GDDR5">GDDR5 (2)</label>
                         </li>
                     </ul>
-                    <hr>
                 </div>
                 etc. etc.
             </div>
