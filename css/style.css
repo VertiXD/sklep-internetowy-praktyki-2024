@@ -1013,7 +1013,7 @@ body {
 
     .card-product-more-less
     {
-        width: 300px
+        width: 150px
     }
     .card-payment-possibles img {
         width: 35px;
@@ -1263,5 +1263,9 @@ body {
     }
     .product_button:hover{
         background-color: var(--hover_button_color);
+    }
+    #message {
+        height: 120px;
+        resize: none;
     }
 }

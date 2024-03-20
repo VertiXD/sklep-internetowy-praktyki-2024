@@ -119,3 +119,9 @@ function toIndex(){
 function toCart(){
     window.location.href = './koszyk.html';
 }
+function toProduct(){
+    window.location.href = './product.html';
+}
+function toContact(){
+    window.location.href = './kontakt.html';
+}
